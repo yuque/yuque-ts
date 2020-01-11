@@ -1,10 +1,11 @@
 // This file is auto-generated, don't edit it
+import YuqueUtil from '@ali/yuque-util';
+import { Readable } from 'stream';
 import * as $tea from '@alicloud/tea-typescript';
-import BaseClient from './base';
 
 export class Config extends $tea.Model {
-  authToken: string
-  domain: string
+  authToken: string;
+  domain: string;
   static names(): { [key: string]: string } {
     return {
       authToken: 'authToken',
@@ -19,13 +20,13 @@ export class Config extends $tea.Model {
     };
   }
 
-  constructor(map: { [key: string]: any }) {
+  constructor(map?: { [key: string]: any }) {
     super(map);
   }
 }
 
 export class HelloResponse extends $tea.Model {
-  data: Hello
+  data: Hello;
   static names(): { [key: string]: string } {
     return {
       data: 'data',
@@ -38,13 +39,13 @@ export class HelloResponse extends $tea.Model {
     };
   }
 
-  constructor(map: { [key: string]: any }) {
+  constructor(map?: { [key: string]: any }) {
     super(map);
   }
 }
 
 export class Hello extends $tea.Model {
-  message: string
+  message: string;
   static names(): { [key: string]: string } {
     return {
       message: 'message',
@@ -57,20 +58,20 @@ export class Hello extends $tea.Model {
     };
   }
 
-  constructor(map: { [key: string]: any }) {
+  constructor(map?: { [key: string]: any }) {
     super(map);
   }
 }
 
 export class User extends $tea.Model {
-  id: number
-  type: string
-  login: string
-  name: string
-  description: string
-  avatarUrl: string
-  createdAt: string
-  updatedAt: string
+  id: number;
+  type: string;
+  login: string;
+  name: string;
+  description: string;
+  avatarUrl: string;
+  createdAt: string;
+  updatedAt: string;
   static names(): { [key: string]: string } {
     return {
       id: 'id',
@@ -97,13 +98,13 @@ export class User extends $tea.Model {
     };
   }
 
-  constructor(map: { [key: string]: any }) {
+  constructor(map?: { [key: string]: any }) {
     super(map);
   }
 }
 
 export class UserResponse extends $tea.Model {
-  data: User
+  data: User;
   static names(): { [key: string]: string } {
     return {
       data: 'data',
@@ -116,20 +117,20 @@ export class UserResponse extends $tea.Model {
     };
   }
 
-  constructor(map: { [key: string]: any }) {
+  constructor(map?: { [key: string]: any }) {
     super(map);
   }
 }
 
 export class Group extends $tea.Model {
-  id?: string
-  login: string
-  name: string
-  avatarUrl?: string
-  ownerId: string
-  description: string
-  createdAt: string
-  updatedAt: string
+  id?: string;
+  login: string;
+  name: string;
+  avatarUrl?: string;
+  ownerId: string;
+  description: string;
+  createdAt: string;
+  updatedAt: string;
   static names(): { [key: string]: string } {
     return {
       id: 'id',
@@ -156,13 +157,13 @@ export class Group extends $tea.Model {
     };
   }
 
-  constructor(map: { [key: string]: any }) {
+  constructor(map?: { [key: string]: any }) {
     super(map);
   }
 }
 
 export class GroupsResponse extends $tea.Model {
-  data: Group[]
+  data: Group[];
   static names(): { [key: string]: string } {
     return {
       data: 'data',
@@ -175,13 +176,13 @@ export class GroupsResponse extends $tea.Model {
     };
   }
 
-  constructor(map: { [key: string]: any }) {
+  constructor(map?: { [key: string]: any }) {
     super(map);
   }
 }
 
 export class UsersResponse extends $tea.Model {
-  data: User[]
+  data: User[];
   static names(): { [key: string]: string } {
     return {
       data: 'data',
@@ -194,13 +195,13 @@ export class UsersResponse extends $tea.Model {
     };
   }
 
-  constructor(map: { [key: string]: any }) {
+  constructor(map?: { [key: string]: any }) {
     super(map);
   }
 }
 
 export class GroupResponse extends $tea.Model {
-  data: Group
+  data: Group;
   static names(): { [key: string]: string } {
     return {
       data: 'data',
@@ -213,14 +214,14 @@ export class GroupResponse extends $tea.Model {
     };
   }
 
-  constructor(map: { [key: string]: any }) {
+  constructor(map?: { [key: string]: any }) {
     super(map);
   }
 }
 
 export class GroupDetailResponse extends $tea.Model {
-  abilities: GroupDetailResponseAbilities
-  data: Group[]
+  abilities: GroupDetailResponseAbilities;
+  data: Group[];
   static names(): { [key: string]: string } {
     return {
       abilities: 'abilities',
@@ -235,19 +236,19 @@ export class GroupDetailResponse extends $tea.Model {
     };
   }
 
-  constructor(map: { [key: string]: any }) {
+  constructor(map?: { [key: string]: any }) {
     super(map);
   }
 }
 
 export class GroupUser extends $tea.Model {
-  id: number
-  groupId: number
-  userId: number
-  role: number
-  user: User
-  createdAt: string
-  updatedAt: string
+  id: number;
+  groupId: number;
+  userId: number;
+  role: number;
+  user: User;
+  createdAt: string;
+  updatedAt: string;
   static names(): { [key: string]: string } {
     return {
       id: 'id',
@@ -272,13 +273,13 @@ export class GroupUser extends $tea.Model {
     };
   }
 
-  constructor(map: { [key: string]: any }) {
+  constructor(map?: { [key: string]: any }) {
     super(map);
   }
 }
 
 export class GroupUsersResponse extends $tea.Model {
-  data: GroupUser[]
+  data: GroupUser[];
   static names(): { [key: string]: string } {
     return {
       data: 'data',
@@ -291,13 +292,13 @@ export class GroupUsersResponse extends $tea.Model {
     };
   }
 
-  constructor(map: { [key: string]: any }) {
+  constructor(map?: { [key: string]: any }) {
     super(map);
   }
 }
 
 export class GroupUserResponse extends $tea.Model {
-  data: GroupUser
+  data: GroupUser;
   static names(): { [key: string]: string } {
     return {
       data: 'data',
@@ -310,26 +311,26 @@ export class GroupUserResponse extends $tea.Model {
     };
   }
 
-  constructor(map: { [key: string]: any }) {
+  constructor(map?: { [key: string]: any }) {
     super(map);
   }
 }
 
 export class Book extends $tea.Model {
-  id: number
-  type: string
-  slug: string
-  name: string
-  namespace: string
-  userId: number
-  user: User
-  description: string
-  creatorId: number
-  public: number
-  likesCount: number
-  watchesCount: number
-  createdAt: string
-  updatedAt: string
+  id: number;
+  type: string;
+  slug: string;
+  name: string;
+  namespace: string;
+  userId: number;
+  user: User;
+  description: string;
+  creatorId: number;
+  public: number;
+  likesCount: number;
+  watchesCount: number;
+  createdAt: string;
+  updatedAt: string;
   static names(): { [key: string]: string } {
     return {
       id: 'id',
@@ -368,13 +369,13 @@ export class Book extends $tea.Model {
     };
   }
 
-  constructor(map: { [key: string]: any }) {
+  constructor(map?: { [key: string]: any }) {
     super(map);
   }
 }
 
 export class BooksResponse extends $tea.Model {
-  data: Book[]
+  data: Book[];
   static names(): { [key: string]: string } {
     return {
       data: 'data',
@@ -387,13 +388,13 @@ export class BooksResponse extends $tea.Model {
     };
   }
 
-  constructor(map: { [key: string]: any }) {
+  constructor(map?: { [key: string]: any }) {
     super(map);
   }
 }
 
 export class BookResponse extends $tea.Model {
-  data: Book
+  data: Book;
   static names(): { [key: string]: string } {
     return {
       data: 'data',
@@ -406,15 +407,15 @@ export class BookResponse extends $tea.Model {
     };
   }
 
-  constructor(map: { [key: string]: any }) {
+  constructor(map?: { [key: string]: any }) {
     super(map);
   }
 }
 
 export class BookToc extends $tea.Model {
-  title: string
-  slug: string
-  depth: number
+  title: string;
+  slug: string;
+  depth: number;
   static names(): { [key: string]: string } {
     return {
       title: 'title',
@@ -431,13 +432,13 @@ export class BookToc extends $tea.Model {
     };
   }
 
-  constructor(map: { [key: string]: any }) {
+  constructor(map?: { [key: string]: any }) {
     super(map);
   }
 }
 
 export class BookTocsResponse extends $tea.Model {
-  data: BookToc[]
+  data: BookToc[];
   static names(): { [key: string]: string } {
     return {
       data: 'data',
@@ -450,14 +451,14 @@ export class BookTocsResponse extends $tea.Model {
     };
   }
 
-  constructor(map: { [key: string]: any }) {
+  constructor(map?: { [key: string]: any }) {
     super(map);
   }
 }
 
 export class SearchQuery extends $tea.Model {
-  query: string
-  type?: string
+  query: string;
+  type?: string;
   static names(): { [key: string]: string } {
     return {
       query: 'query',
@@ -472,33 +473,33 @@ export class SearchQuery extends $tea.Model {
     };
   }
 
-  constructor(map: { [key: string]: any }) {
+  constructor(map?: { [key: string]: any }) {
     super(map);
   }
 }
 
 export class Doc extends $tea.Model {
-  id: number
-  slug: string
-  title: string
-  bookId: number
-  book: Book
-  userId: number
-  user: User
-  format: string
-  body: string
-  bodyDraft: string
-  bodyHtml: string
-  bodyLake: string
-  creatorId: number
-  public: number
-  status: number
-  likesCount: number
-  commentsCount: number
-  contentUpdatedAt: string
-  deletedAt: string
-  createdAt: string
-  updatedAt: string
+  id: number;
+  slug: string;
+  title: string;
+  bookId: number;
+  book: Book;
+  userId: number;
+  user: User;
+  format: string;
+  body: string;
+  bodyDraft: string;
+  bodyHtml: string;
+  bodyLake: string;
+  creatorId: number;
+  public: number;
+  status: number;
+  likesCount: number;
+  commentsCount: number;
+  contentUpdatedAt: string;
+  deletedAt: string;
+  createdAt: string;
+  updatedAt: string;
   static names(): { [key: string]: string } {
     return {
       id: 'id',
@@ -551,13 +552,13 @@ export class Doc extends $tea.Model {
     };
   }
 
-  constructor(map: { [key: string]: any }) {
+  constructor(map?: { [key: string]: any }) {
     super(map);
   }
 }
 
 export class DocsResponse extends $tea.Model {
-  data: Doc[]
+  data: Doc[];
   static names(): { [key: string]: string } {
     return {
       data: 'data',
@@ -570,13 +571,13 @@ export class DocsResponse extends $tea.Model {
     };
   }
 
-  constructor(map: { [key: string]: any }) {
+  constructor(map?: { [key: string]: any }) {
     super(map);
   }
 }
 
 export class DocResponse extends $tea.Model {
-  data: Doc
+  data: Doc;
   static names(): { [key: string]: string } {
     return {
       data: 'data',
@@ -589,15 +590,15 @@ export class DocResponse extends $tea.Model {
     };
   }
 
-  constructor(map: { [key: string]: any }) {
+  constructor(map?: { [key: string]: any }) {
     super(map);
   }
 }
 
 export class GroupDetailResponseAbilitiesGroupUser extends $tea.Model {
-  create: boolean
-  update: boolean
-  destroy: boolean
+  create: boolean;
+  update: boolean;
+  destroy: boolean;
   static names(): { [key: string]: string } {
     return {
       create: 'create',
@@ -621,9 +622,9 @@ export class GroupDetailResponseAbilitiesGroupUser extends $tea.Model {
 }
 
 export class GroupDetailResponseAbilitiesRepo extends $tea.Model {
-  create: boolean
-  update: boolean
-  destroy: boolean
+  create: boolean;
+  update: boolean;
+  destroy: boolean;
   static names(): { [key: string]: string } {
     return {
       create: 'create',
@@ -647,11 +648,11 @@ export class GroupDetailResponseAbilitiesRepo extends $tea.Model {
 }
 
 export class GroupDetailResponseAbilities extends $tea.Model {
-  read: boolean
-  update: boolean
-  destroy: boolean
-  groupUser: GroupDetailResponseAbilitiesGroupUser
-  repo: GroupDetailResponseAbilitiesRepo
+  read: boolean;
+  update: boolean;
+  destroy: boolean;
+  groupUser: GroupDetailResponseAbilitiesGroupUser;
+  repo: GroupDetailResponseAbilitiesRepo;
   static names(): { [key: string]: string } {
     return {
       read: 'read',
@@ -679,17 +680,21 @@ export class GroupDetailResponseAbilities extends $tea.Model {
 }
 
 
-export default class Client extends BaseClient {
+export default class Client {
+  _domain: string;
+  _authToken: string;
+
   constructor(config: Config) {
-    super(config.toMap());
+    this._authToken = config.authToken;
+    this._domain = config.domain;
   }
 
-  async get(path: string, params: object): Promise<object>  {
+  async get(path: string, params: {[key: string]: any}): Promise<{[key: string]: any}> {
     let request_ = new $tea.Request();
     request_.protocol = "https";
     request_.method = "GET";
     request_.pathname = `/api/v2${path}`;
-    request_.query = this._toQuery({
+    request_.query = await YuqueUtil.toQuery({
       ...params,
     });
     request_.headers = {
@@ -699,11 +704,11 @@ export default class Client extends BaseClient {
     };
     let response_ = await $tea.doAction(request_);
 
-    let result = await this._readJSON(response_);
+    let result = await YuqueUtil.readJSON(response_);
     return result;
   }
 
-  async post(path: string, data: object): Promise<object>  {
+  async post(path: string, data: {[key: string]: any}): Promise<{[key: string]: any}> {
     let request_ = new $tea.Request();
     request_.method = "POST";
     request_.pathname = `/api/v2${path}`;
@@ -712,14 +717,14 @@ export default class Client extends BaseClient {
       'x-auth-token': this._authToken,
       'user-agent': "tea/nodejs",
     };
-    request_.body = new $tea.BytesReadable(this._toJSON(data));
+    request_.body = new $tea.BytesReadable(await YuqueUtil.toJSONString(data));
     let response_ = await $tea.doAction(request_);
 
-    let result = await this._readJSON(response_);
+    let result = await YuqueUtil.readJSON(response_);
     return result;
   }
 
-  async put(path: string, data: object): Promise<object>  {
+  async put(path: string, data: {[key: string]: any}): Promise<{[key: string]: any}> {
     let request_ = new $tea.Request();
     request_.method = "PUT";
     request_.pathname = `/api/v2${path}`;
@@ -728,14 +733,14 @@ export default class Client extends BaseClient {
       'x-auth-token': this._authToken,
       'user-agent': "tea/nodejs",
     };
-    request_.body = new $tea.BytesReadable(this._toJSON(data));
+    request_.body = new $tea.BytesReadable(await YuqueUtil.toJSONString(data));
     let response_ = await $tea.doAction(request_);
 
-    let result = await this._readJSON(response_);
+    let result = await YuqueUtil.readJSON(response_);
     return result;
   }
 
-  async destroy(path: string, data: object): Promise<object>  {
+  async destroy(path: string, data: {[key: string]: any}): Promise<{[key: string]: any}> {
     let request_ = new $tea.Request();
     request_.method = "DELETE";
     request_.pathname = `/api/v2${path}`;
@@ -744,10 +749,10 @@ export default class Client extends BaseClient {
       'x-auth-token': this._authToken,
       'user-agent': "tea/nodejs",
     };
-    request_.body = new $tea.BytesReadable(this._toJSON(data));
+    request_.body = new $tea.BytesReadable(await YuqueUtil.toJSONString(data));
     let response_ = await $tea.doAction(request_);
 
-    let result = await this._readJSON(response_);
+    let result = await YuqueUtil.readJSON(response_);
     return result;
   }
 
@@ -772,18 +777,18 @@ export default class Client extends BaseClient {
   }
 
   async createGroup(group: Group): Promise<GroupResponse> {
-    return $tea.cast<GroupResponse>(await this.post(`/groups`, group.toMap()), new GroupResponse({}));
+    return $tea.cast<GroupResponse>(await this.post(`/groups`, $tea.toMap(group)), new GroupResponse({}));
   }
 
   async getGroup(groupid: string): Promise<GroupDetailResponse> {
     return $tea.cast<GroupDetailResponse>(await this.get(`/groups/${groupid}`, { }), new GroupDetailResponse({}));
   }
 
-  async updateGroup(groupid: string, params: object): Promise<GroupResponse> {
+  async updateGroup(groupid: string, params: {[key: string]: any}): Promise<GroupResponse> {
     return $tea.cast<GroupResponse>(await this.put(`/groups/${groupid}`, params), new GroupResponse({}));
   }
 
-  async destryGroup(groupid: string): Promise<object> {
+  async destryGroup(groupid: string): Promise<{[key: string]: any}> {
     return await this.destroy(`/groups/${groupid}`, { });
   }
 
@@ -791,19 +796,19 @@ export default class Client extends BaseClient {
     return $tea.cast<GroupUsersResponse>(await this.get(`/groups/${groupid}/users`, { }), new GroupUsersResponse({}));
   }
 
-  async updateGroupMember(groupid: string, userid: string, params: object): Promise<GroupUserResponse> {
+  async updateGroupMember(groupid: string, userid: string, params: {[key: string]: any}): Promise<GroupUserResponse> {
     return $tea.cast<GroupUserResponse>(await this.put(`/groups/${groupid}/users/${userid}`, params), new GroupUserResponse({}));
   }
 
-  async destroyGroupMember(groupid: string, userid: string): Promise<object> {
+  async destroyGroupMember(groupid: string, userid: string): Promise<{[key: string]: any}> {
     return await this.destroy(`/groups/${groupid}/users/${userid}`, { });
   }
 
-  async getBooksByUser(userid: string, params: object): Promise<BooksResponse> {
+  async getBooksByUser(userid: string, params: {[key: string]: any}): Promise<BooksResponse> {
     return $tea.cast<BooksResponse>(await this.get(`/users/${userid}/repos`, params), new BooksResponse({}));
   }
 
-  async createBook(userid: string, params: object): Promise<BooksResponse> {
+  async createBook(userid: string, params: {[key: string]: any}): Promise<BooksResponse> {
     return $tea.cast<BooksResponse>(await this.post(`/groups/${userid}/repos`, params), new BooksResponse({}));
   }
 
@@ -811,11 +816,11 @@ export default class Client extends BaseClient {
     return $tea.cast<BookResponse>(await this.get(`/repos/${namespace}`, { }), new BookResponse({}));
   }
 
-  async updateBook(namespace: string, params: object): Promise<BookResponse> {
+  async updateBook(namespace: string, params: {[key: string]: any}): Promise<BookResponse> {
     return $tea.cast<BookResponse>(await this.put(`/repos/${namespace}`, params), new BookResponse({}));
   }
 
-  async destroyBook(namespace: string): Promise<object> {
+  async destroyBook(namespace: string): Promise<{[key: string]: any}> {
     return await this.destroy(`/repos/${namespace}`, { });
   }
 
@@ -824,7 +829,7 @@ export default class Client extends BaseClient {
   }
 
   async searchBook(params: SearchQuery): Promise<BooksResponse> {
-    return $tea.cast<BooksResponse>(await this.get(`/search/repos`, params.toMap()), new BooksResponse({}));
+    return $tea.cast<BooksResponse>(await this.get(`/search/repos`, $tea.toMap(params)), new BooksResponse({}));
   }
 
   async getDocs(namespace: string): Promise<DocsResponse> {
@@ -835,15 +840,15 @@ export default class Client extends BaseClient {
     return $tea.cast<DocResponse>(await this.get(`/repos/${namespace}/docs/${slug}`, { }), new DocResponse({}));
   }
 
-  async createDoc(namespace: string, params: object): Promise<DocResponse> {
+  async createDoc(namespace: string, params: {[key: string]: any}): Promise<DocResponse> {
     return $tea.cast<DocResponse>(await this.post(`/repos/${namespace}/docs`, params), new DocResponse({}));
   }
 
-  async updateDoc(namespace: string, slug: string, params: object): Promise<DocResponse> {
+  async updateDoc(namespace: string, slug: string, params: {[key: string]: any}): Promise<DocResponse> {
     return $tea.cast<DocResponse>(await this.put(`/repos/${namespace}/docs/${slug}`, params), new DocResponse({}));
   }
 
-  async destroyDoc(namespace: string, slug: string): Promise<object> {
+  async destroyDoc(namespace: string, slug: string): Promise<{[key: string]: any}> {
     return await this.destroy(`/repos/${namespace}/docs/${slug}`, { });
   }
 

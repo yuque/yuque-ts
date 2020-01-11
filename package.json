@@ -10,7 +10,8 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@alicloud/tea-typescript": "^1.2.0",
+    "@ali/yuque-util": "^0.1.0",
+    "@alicloud/tea-typescript": "^1",
     "@types/node": "^12.12.5"
   },
   "devDependencies": {
